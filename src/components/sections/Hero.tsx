@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '../ui/Button';
 import { ShieldCheck, Clock, HeartPulse } from 'lucide-react';
 import './Hero.css';
 

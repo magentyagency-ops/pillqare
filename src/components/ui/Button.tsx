@@ -1,12 +1,20 @@
-import React, { type ButtonHTMLAttributes } from 'react';
+import React, { type ButtonHTMLAttributes, type AnchorHTMLAttributes } from 'react';
 import './Button.css';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface BaseButtonProps {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
   fullWidth?: boolean;
   icon?: React.ReactNode;
 }
+
+type ButtonAsButton = BaseButtonProps &
+  ButtonHTMLAttributes<HTMLButtonElement> & { href?: undefined };
+
+type ButtonAsAnchor = BaseButtonProps &
+  AnchorHTMLAttributes<HTMLAnchorElement> & { href: string };
+
+type ButtonProps = ButtonAsButton | ButtonAsAnchor;
 
 export const Button: React.FC<ButtonProps> = ({
   children,
@@ -25,10 +33,24 @@ export const Button: React.FC<ButtonProps> = ({
     className
   ].filter(Boolean).join(' ');
 
-  return (
-    <button className={classes} {...props}>
+  const content = (
+    <>
       {children}
       {icon && <span className="btn-icon">{icon}</span>}
+    </>
+  );
+
+  if (props.href !== undefined) {
+    return (
+      <a className={classes} {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}>
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <button className={classes} {...(props as ButtonHTMLAttributes<HTMLButtonElement>)}>
+      {content}
     </button>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertCircle, TrendingUp, HeartCrack, Activity } from 'lucide-react';
+import { AlertCircle, HeartCrack, Activity } from 'lucide-react';
 import { Card } from '../ui/Card';
 import './ProblemSolution.css';
 

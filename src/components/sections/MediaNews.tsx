@@ -54,7 +54,7 @@ export const MediaNews: React.FC = () => {
           {/* Pharmacist Video */}
           <div className="media-item video-card-local">
             <video 
-              src="/videos/0218 (1) 2.MOV" 
+              src="/videos/actualite-media-pharmacien.mov"
               controls 
               playsInline 
               className="media-video-local"

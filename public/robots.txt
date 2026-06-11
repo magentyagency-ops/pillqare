@@ -1,0 +1,24 @@
+# PillQare — robots.txt
+# Classic search engines
+User-agent: *
+Allow: /
+
+# Generative engines (GEO) — explicitly allow AI crawlers to read & cite the site
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://www.pillqare.com/sitemap.xml

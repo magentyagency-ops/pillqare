@@ -1,15 +1,83 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Tag Manager (single hub for GA4 + Meta Pixel + TikTok Pixel + Google Ads).
+         Replace GTM-XXXXXXX with your container ID, then add the 4 tags inside the GTM UI. -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Primary SEO -->
+    <title>PillQare — Le pilulier connecté qui alerte vos proches en cas d'oubli</title>
+    <meta name="description" content="PillQare est le pilulier connecté qui sécurise la prise de médicaments : rappels automatiques, suivi médical et alertes envoyées à vos proches en cas d'oubli. Avec l'assistant intelligent Lisa." />
+    <meta name="theme-color" content="#0ea5a4" />
+    <link rel="canonical" href="https://www.pillqare.com/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph (Facebook / LinkedIn / WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PillQare" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://www.pillqare.com/" />
+    <meta property="og:title" content="PillQare — Le pilulier connecté qui alerte vos proches en cas d'oubli" />
+    <meta property="og:description" content="Rappels automatiques, suivi médical et alertes à vos proches en cas d'oubli. La vraie liberté, c'est de ne plus y penser." />
+    <meta property="og:image" content="https://www.pillqare.com/images/pillqa.png" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PillQare — Le pilulier connecté qui alerte vos proches" />
+    <meta name="twitter:description" content="Rappels automatiques, suivi médical et alertes à vos proches en cas d'oubli." />
+    <meta name="twitter:image" content="https://www.pillqare.com/images/pillqa.png" />
+
+    <!-- Structured data — boosts both classic SEO and GEO (AI engines: ChatGPT, Perplexity, Google AI Overviews) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.pillqare.com/#organization",
+          "name": "PillQare",
+          "url": "https://www.pillqare.com/",
+          "logo": "https://www.pillqare.com/images/pillqa.png"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.pillqare.com/#website",
+          "url": "https://www.pillqare.com/",
+          "name": "PillQare",
+          "inLanguage": "fr-FR",
+          "publisher": { "@id": "https://www.pillqare.com/#organization" }
+        },
+        {
+          "@type": "Product",
+          "name": "PillQare — Pilulier connecté",
+          "image": "https://www.pillqare.com/images/pillqa.png",
+          "description": "Pilulier connecté qui sécurise la prise de médicaments grâce à des rappels automatiques, un suivi médical et des alertes envoyées aux proches en cas d'oubli. Inclut l'assistant intelligent Lisa.",
+          "brand": { "@id": "https://www.pillqare.com/#organization" },
+          "category": "Pilulier connecté / Dispositif de santé",
+          "url": "https://www.pillqare.com/"
+        }
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PillQare - Sécurisez la prise de médicaments</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript). Replace GTM-XXXXXXX with your container ID. -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

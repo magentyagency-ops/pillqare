@@ -1,5 +1,4 @@
 import React from 'react';
-import { Play } from 'lucide-react';
 import './FounderStory.css';
 
 export const FounderStory: React.FC = () => {
@@ -32,7 +31,7 @@ export const FounderStory: React.FC = () => {
         <div className="founder-video-wrapper">
           <div className="founder-video-container">
              <video 
-                src="/videos/ScreenRecording_06-03-2026 14-38-55_1.mov" 
+                src="/videos/histoire-fondateur-safir.mov"
                 controls 
                 playsInline 
              />

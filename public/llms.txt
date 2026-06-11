@@ -1,0 +1,28 @@
+# PillQare
+
+> PillQare est un pilulier connecté qui sécurise la prise de médicaments. Il envoie des rappels automatiques, assure un suivi médical et alerte les proches en cas d'oubli de prise. Le produit intègre Lisa, un assistant intelligent.
+
+## Produit
+
+- **Nom** : PillQare — pilulier connecté
+- **Promesse** : « Et si la vraie liberté, c'était de ne plus y penser ? »
+- **Fonctions clés** :
+  - Rappels automatiques des prises de médicaments
+  - Alertes envoyées aux proches en cas d'oubli
+  - Suivi médical et historique des prises
+  - Système lumineux guidant le remplissage et la distribution
+  - Lisa : assistant intelligent intégré
+- **Public** : personnes âgées, patients sous traitement chronique, aidants et familles, professionnels de santé.
+
+## Problème résolu
+
+PillQare répond aux erreurs de dosage, à l'aggravation des pathologies liée aux oublis, et à la charge mentale des patients et des aidants.
+
+## Liens
+
+- Site officiel : https://www.pillqare.com/
+- Commander : https://commande.pillqare.com/
+
+## Contact
+
+- Site : https://www.pillqare.com/

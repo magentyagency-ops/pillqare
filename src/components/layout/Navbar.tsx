@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Pill, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/Button';
 import './Navbar.css';
 
@@ -40,7 +40,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         <div className="navbar-actions desktop-only">
-          <Button variant="primary" size="sm">Précommander</Button>
+          <Button href="https://commande.pillqare.com" variant="primary" size="sm">Précommander</Button>
         </div>
 
         {/* Mobile Nav Toggle */}
@@ -67,7 +67,14 @@ export const Navbar: React.FC = () => {
             </a>
           ))}
           <div className="mobile-menu-actions">
-            <Button variant="primary" fullWidth>Précommander</Button>
+            <Button
+              href="https://commande.pillqare.com"
+              variant="primary"
+              fullWidth
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Précommander
+            </Button>
           </div>
         </div>
       </div>

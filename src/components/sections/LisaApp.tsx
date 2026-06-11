@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { Mic, Smartphone, Users, ActivitySquare, Play, Pause } from 'lucide-react';
-import { Button } from '../ui/Button';
 import './LisaApp.css';
 
 export const LisaApp: React.FC = () => {
@@ -72,7 +71,7 @@ export const LisaApp: React.FC = () => {
             </div>
             <audio 
               ref={audioRef} 
-              src="/videos/Neoma Business School 50 - copie.m4a" 
+              src="/videos/lisa-assistant-demo.m4a"
               onEnded={() => setIsPlaying(false)}
             />
           </div>

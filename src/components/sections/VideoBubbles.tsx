@@ -6,9 +6,9 @@ export const VideoBubbles: React.FC = () => {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   const videos = [
-    "/videos/0509 2.MOV",
-    "/videos/0521 (1).mov",
-    "/videos/0603.MOV"
+    "/videos/1-bulles-presentation-etape1.mov",
+    "/videos/2-bulles-presentation-etape2.mov",
+    "/videos/3-bulles-presentation-etape3.mov"
   ];
 
   return (
