@@ -1,0 +1,139 @@
+.hero {
+  position: relative;
+  padding: 10rem 0 6rem;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 992px) {
+  .hero-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.hero-slogan {
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 2.5rem;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* Product Image Styling */
+.product-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(13, 110, 253, 0.2) 0%, rgba(255,255,255,0) 70%);
+  z-index: -1;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transform: translateY(0);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+}
+
+.product-image-container:hover .product-image {
+  transform: translateY(-10px) scale(1.02);
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+}
+
+/* Background Blobs */
+.blob {
+  position: absolute;
+  filter: blur(100px);
+  z-index: 1;
+  opacity: 0.15;
+  animation: float 15s ease-in-out infinite alternate;
+}
+
+.blob-1 {
+  top: -10%;
+  right: -5%;
+  width: 40vw;
+  height: 40vw;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+.blob-2 {
+  bottom: -10%;
+  left: -5%;
+  width: 30vw;
+  height: 30vw;
+  background: var(--status-green);
+  border-radius: 50%;
+  animation-delay: -7s;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, -60px) scale(1.05); }
+  66% { transform: translate(-30px, 40px) scale(0.95); }
+  100% { transform: translate(60px, 80px) scale(1.15); }
+}

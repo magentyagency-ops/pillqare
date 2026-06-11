@@ -1,0 +1,34 @@
+.card {
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  background-color: var(--white);
+  transition: var(--transition);
+}
+
+.card-default {
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.card-elevated {
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(0,0,0,0.02);
+}
+
+.card-elevated:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.card-outline {
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: transparent;
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-md);
+}

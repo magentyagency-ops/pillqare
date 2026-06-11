@@ -1,0 +1,123 @@
+#problem {
+  position: relative;
+  background-image: url('/images/idz.png');
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+#problem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 250px; /* Long fade for a very smooth transition */
+  background: linear-gradient(to bottom, var(--white) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#problem .container {
+  position: relative;
+  z-index: 2;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.text-red { color: var(--status-red); }
+.text-orange { color: var(--status-orange); }
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .problem-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.problem-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.solution-banner {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  border-radius: var(--border-radius-lg);
+  padding: 3rem;
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.solution-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+  animation: rotate 20s linear infinite;
+}
+
+.solution-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.solution-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.solution-content p {
+  font-size: 1.125rem;
+  opacity: 0.9;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (min-width: 992px) {
+  #problem .text-center {
+    text-align: right;
+    margin-left: auto;
+    max-width: 65%;
+  }
+
+  #problem .subtitle {
+    margin-right: 0;
+  }
+
+  .problem-grid {
+    margin-left: auto;
+    max-width: 65%;
+  }
+}
